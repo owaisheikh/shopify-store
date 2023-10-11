@@ -41,6 +41,7 @@ class SuperAdminController extends Controller {
             $endpoint = getShopifyURLForStore('shop.json', $store_arr);
             $headers = getShopifyHeadersForStore($store_arr);
             $response = $this->makeAnAPICallToShopify('GET', $endpoint, null, $headers);
+            // dd($endpoint);
             if($response['statusCode'] == 200) {
                 $shop_body = $response['body']['shop'];
                 $newStore = Store::create(array_merge($store_arr, [

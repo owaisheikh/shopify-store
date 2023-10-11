@@ -191,7 +191,7 @@
                             {{$order['shipping_address']['phone'] ?? ''}} <br>
                             {{$order['shipping_address']['address1'] ?? ''}} <br>
                             {{$order['shipping_address']['address2'] ?? ''}} <br>
-                            {{$order['shipping_address']['province'] ?? ''}} {{$order['shipping_address']['city']}} <br>
+                            {{$order['shipping_address']['province'] ?? ''}} {{$order['shipping_address']['city'] ?? ''}} <br>
                             {{$order['shipping_address']['country'] ?? ''}} {{$order['shipping_address']['zip'] ?? ''}}
                         </p>
                     </div>
@@ -206,7 +206,7 @@
                             {{$order['billing_address']['phone'] ?? ''}} <br>
                             {{$order['billing_address']['address1'] ?? ''}} <br>
                             {{$order['billing_address']['address2'] ?? ''}} <br>
-                            {{$order['billing_address']['province'] ?? ''}} {{$order['billing_address']['city']}} <br>
+                            {{$order['billing_address']['province'] ?? ''}} {{$order['billing_address']['city'] ?? ''}} <br>
                             {{$order['billing_address']['country'] ?? ''}} {{$order['billing_address']['zip'] ?? ''}}
                         </p>
                     </div>
